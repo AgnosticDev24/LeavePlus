@@ -1,0 +1,133 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&#9992 Leave Plus</title>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Passion+One:wght@400;700;900&family=Rubik+Spray+Paint&family=Sigmar+One&family=Slackey&family=Spicy+Rice&display=swap"
+        rel="stylesheet"> <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body onload="myFunction()">
+
+<!-- CODE FOR NAVBAR BEGINS -->
+<nav class="navbar sticky-top" id="navbar">
+    <div class="navbar-brand ml-auto" href="">
+        <a class="home" href="#" id="backToTop"><span>&#x1F3E1</span></a>
+    </div>
+</nav>
+
+    <!-- CODE FOR LEAVE PLUS FORM -->
+    <div class="leave-plus-form pt-5 col-12 col-md-6 mx-auto">
+        <div class="row mb-3">
+        <div class="col-12 col-md-6 mx-auto">
+            <div class="input-group">
+                <span class="input-group-text">Employee Name</span>
+                <input type="text" class="form-control" id="employee-name" aria-label="employee-name">
+            </div>
+        </div>
+    </div>
+        <div class="row mb-3">
+            <div class="col-12 col-md-6 mx-auto">
+                <div class="input-group">
+                    <span class="input-group-text">Annual Salary</span>
+                    <input type="text" class="form-control" id="annual-salary" aria-label="Annual Salary">
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-12 col-md-6 mx-auto">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="tto-toggle">
+                    <label class="form-check-label" for="tto-toggle">Use TTO Amount</label>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-12 col-md-6 mx-auto">
+                <div class="input-group tto-section">
+                    <span class="input-group-text">TTO Amount</span>
+                    <input type="text" class="form-control" id="tto-amount" aria-label="TTO Amount" disabled>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-12 col-md-6 mx-auto">
+                <div class="input-group">
+                    <span class="input-group-text term-time-only">Annual Salary (TTO Applied)</span>
+                    <span class="form-control" id="tto-applied-salary" aria-label="TTO Applied Salary"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-12 col-md-6 mx-auto">
+                <div class="input-group">
+                    <span class="input-group-text">Daily Rate</span>
+                    <span class="form-control" id="daily-rate" aria-label="Daily Rate"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-12 col-md-6 mx-auto">
+                <div class="input-group">
+                    <span class="input-group-text">Number of Days Requested</span>
+                    <input type="text" class="form-control" id="days-requested" aria-label="Days Requested">
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-12 col-md-6 mx-auto">
+                <div class="input-group">
+                    <span class="input-group-text">Total Loan</span>
+                    <span class="form-control" id="total-loan" aria-label="Total Loan"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-12 col-md-6 mx-auto">
+                <div class="input-group">
+                    <span class="input-group-text">Repayment Period (months)</span>
+                    <input type="text" class="form-control" id="repayment-period" aria-label="Repayment Period">
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-12 col-md-6 mx-auto">
+                <div class="input-group">
+                    <span class="input-group-text">Monthly Deductions</span>
+                    <span class="form-control" id="monthly-deductions" aria-label="Monthly Deductions"></span>
+                </div>
+            </div>
+        </div>
+<div class="row mb-3">
+    <div class="col-12 col-md-6 mx-auto">
+        <button type="button" onclick="downloadPDF()">Download PDF</button>
+    </div>
+</div>
+    </div>
+
+
+    <!-- CODE FOR FOOTER BEGINS -->
+    <footer class="text-center text-lg-start">
+        <div class="container p-4">
+            <p class="">&copy; Copyright 2024 - I &#10084; PAYROLL powered by <a href="https://getbootstrap.com/"
+                    target="_blank" class="text-dark">Bootstrap</a>.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+</body>
+
+</html>
