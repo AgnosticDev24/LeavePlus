@@ -15,29 +15,40 @@
 </head>
 
 <body onload="myFunction()">
+<!-- Hidden image element -->
+<img id="logo" src="https://www.salford.gov.uk/assets/images/scc.png" alt="Example Image" style="display: none;">
 
 <!-- CODE FOR NAVBAR BEGINS -->
 <nav class="navbar sticky-top" id="navbar">
+    <a href="https://www.salford.gov.uk/"><img src="https://www.salford.gov.uk/assets/images/scc.png"/></a>
     <div class="navbar-brand ml-auto" href="">
-        <a class="home" href="#" id="backToTop"><span>&#x1F3E1</span></a>
+        <a class="home" href="#" id="backToTop"><span>✈</span></a>
     </div>
 </nav>
 
     <!-- CODE FOR LEAVE PLUS FORM -->
     <div class="leave-plus-form pt-5 col-12 col-md-6 mx-auto">
         <div class="row mb-3">
-        <div class="col-12 col-md-6 mx-auto">
-            <div class="input-group">
-                <span class="input-group-text">Employee Name</span>
-                <input type="text" class="form-control" id="employee-name" aria-label="employee-name">
+            <div class="col-12 col-md-6 mx-auto">
+                <div class="input-group">
+                    <span class="input-group-text">Employee Name</span>
+                    <input type="text" class="form-control" id="employee-name" aria-label="employee-name">
+                </div>
             </div>
         </div>
-    </div>
         <div class="row mb-3">
             <div class="col-12 col-md-6 mx-auto">
                 <div class="input-group">
                     <span class="input-group-text">Annual Salary</span>
                     <input type="text" class="form-control" id="annual-salary" aria-label="Annual Salary">
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-12 col-md-6 mx-auto">
+                <div class="input-group">
+                    <span class="input-group-text">Hours Per Week</span>
+                    <input type="text" class="form-control" id="hours-per-week" aria-label="Hours Per Week">
                 </div>
             </div>
         </div>
@@ -100,17 +111,26 @@
         <div class="row mb-3">
             <div class="col-12 col-md-6 mx-auto">
                 <div class="input-group">
+                    <span class="input-group-text">Minimum Wage</span>
+                    <span class="form-control" id="minimum-wage" aria-label="Minimum Wage"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-12 col-md-6 mx-auto">
+                <div class="input-group">
                     <span class="input-group-text">Monthly Deductions</span>
                     <span class="form-control" id="monthly-deductions" aria-label="Monthly Deductions"></span>
                 </div>
             </div>
         </div>
-<div class="row mb-3">
-    <div class="col-12 col-md-6 mx-auto">
-        <button type="button" onclick="downloadPDF()">Download PDF</button>
+        <div class="row mb-3">
+            <div class="col-12 col-md-6 mx-auto">
+                <button type="button" onclick="downloadPDF()">Download PDF</button>
+            </div>
+        </div>
     </div>
-</div>
-    </div>
+
 
 
     <!-- CODE FOR FOOTER BEGINS -->
